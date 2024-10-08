@@ -1,0 +1,65 @@
+body {
+    min-height: 100vh;
+    background-color: #ECDFCC;
+}
+
+h1 {
+    color: #A5B68D;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+
+h2 {
+    color: #4A4947;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    color: #4A4947;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    width: 120px;
+    height: 40px;
+    border: 3px solid #A5B68D;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.entering {
+    display: flex;
+    justify-content: center;
+}
+
+
+.font {
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+button {
+    background-color: #DA8359; /* Green */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 5px;
+  }
+
+button:hover {
+    box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+    transform: scale(1.05);
+  }

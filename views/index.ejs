@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css" >
+    <title>How's Your Day</title>
+</head>
+
+<body>
+    <h1 class="font">How's Your Day?</h1>
+    <h2 class="font">What kind of quotes would you like to know?</h2>
+    <% if (locals.content){ %>
+    <p class="font"><%= username %>:</p>
+    <p class="font"><%= content %></p>
+    <% } %>
+    <form action="/submit" method="POST" class="buttons">
+        <div class="entering">
+            <input class="font" type="text" id="username" name="username" placeholder="enter your name">
+        </div>
+        <br />
+        <hr />
+        <button class="font" type="submit" value="Bussiness" name="choice">Bussiness</button>
+        <button class="font" type="submit" value="Change" name="choice">Change</button>
+        <button class="font" type="submit" value="Competition" name="choice">Competition</button>
+        <button class="font" type="submit" value="Faith" name="choice">Faith</button>
+        <button class="font" type="submit" value="Famous Quotes" name="choice">Famous Quotes</button>
+        <button class="font" type="submit" value="Film" name="choice">Film</button>
+        <button class="font" type="submit" value="Freedom" name="choice">Freedom</button>
+        <button class="font" type="submit" value="Friendship" name="choice">Friendship</button>
+        <button class="font" type="submit" value="Future" name="choice">Future</button>
+        <button class="font" type="submit" value="Happiness" name="choice">Happiness</button>
+        <button class="font" type="submit" value="Humorous" name="choice">Humorous</button>
+        <button class="font" type="submit" value="Inspirational" name="choice">Inspirational</button>
+        <button class="font" type="submit" value="Life" name="choice">Life</button>
+        <button class="font" type="submit" value="Love" name="choice">Love</button>
+        <button class="font" type="submit" value="Motivational" name="choice">Motivational</button>
+        <button class="font" type="submit" value="Philosophy" name="choice">Philosophy</button>
+        <button class="font" type="submit" value="Science" name="choice">Science</button>
+        <button class="font" type="submit" value="Sports" name="choice">Sports</button>
+        <button class="font" type="submit" value="Success" name="choice">Success</button>
+        <button class="font" type="submit" value="Technology" name="choice">Technology</button>
+        <button class="font" type="submit" value="Wisdom" name="choice">Wisdom</button>
+      </form>
+
+</body>
+
+</html>
