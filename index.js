@@ -21,15 +21,19 @@ app.get("/", (req,res) => {
 
 app.post("/submit", async (req, res) => {
     const choice = req.body.choice;
+    try {
     const result = await axios.get(API_URL + "/quotes?tags=" + choice);
     const resultContent = result.data.results;
     //用random從特定分類中隨機取quote
     const randomNumber = Math.floor(Math.random() * resultContent.length);
-    console.log(randomNumber);
     const randomQuote = resultContent[randomNumber].content;
     const username = req.body.username;
-    console.log(req.body, randomQuote);
     res.render("index.ejs", { content: randomQuote, username: username });
+    //處理error情況
+} catch (error) {
+    console.log(error.message);
+    res.render("index.ejs", { error: error.message});
+}
 })
 
 //監聽serever port
