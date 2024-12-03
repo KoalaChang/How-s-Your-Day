@@ -1,6 +1,8 @@
 body {
-    min-height: 100vh;
+    height: 100vh;
     background-color: #ECDFCC;
+    padding: 0 3rem;
+    text-align: center;
 }
 
 h1 {
@@ -8,7 +10,7 @@ h1 {
     font-size: 5rem;
     display: flex;
     justify-content: center;
-    margin: 100px;
+    margin: 6.25rem;
 }
 
 h2 {
@@ -26,11 +28,11 @@ p {
 }
 
 input {
-    width: 120px;
-    height: 40px;
-    border: 3px solid #A5B68D;
-    border-radius: 5px;
-    font-size: 16px;
+    width: 8rem;
+    height: 2.5rem;
+    border: 0.2rem solid #A5B68D;
+    border-radius: 0.3rem;
+    font-size: 1rem;
 }
 
 .entering {
@@ -45,18 +47,24 @@ input {
     font-style: normal;
 }
 
+.buttons {
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    justify-content: space-between;
+    padding: 0;
+}
 
 button {
-    background-color: #DA8359; /* Green */
+    background-color: #DA8359;
     border: none;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     color: white;
-    padding: 15px 32px;
+    padding: 1rem 2rem;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    margin: 5px;
+    font-size: 1.125rem;
   }
 
 button:hover {
